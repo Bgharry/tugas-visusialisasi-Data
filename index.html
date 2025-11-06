@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visualisasi Data Pengguna Media Sosial di Asia 2024</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Visualisasi Data Pengguna Media Sosial di Asia 2024</h1>
+    <p class="subtitle">Analisis singkat pengguna media sosial di beberapa negara Asia (satuan: juta pengguna)</p>
+    <div class="identity">Harry Zulkifli — NIM 220660121081 — Prodi Informatika — Kelas 7D</div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label for="yearSelect">Pilih Tahun:</label>
+      <select id="yearSelect"></select>
+    </div>
+
+    <section class="chart-container">
+      <h2>Tren Global Total Pengguna (Line)</h2>
+      <canvas id="lineChart"></canvas>
+      <p class="desc" id="desc-line"></p>
+    </section>
+
+    <section class="chart-container">
+      <h2>Jumlah Pengguna per Platform (Bar)</h2>
+      <canvas id="barChart"></canvas>
+      <p class="desc" id="desc-bar"></p>
+    </section>
+
+    <section class="chart-container">
+      <h2>Proporsi Pengguna Global (Pie)</h2>
+      <canvas id="pieChart"></canvas>
+      <p class="desc" id="desc-pie"></p>
+    </section>
+
+    <section class="chart-container">
+      <h2>Histogram: Distribusi Total Pengguna Tahunan</h2>
+      <canvas id="histChart"></canvas>
+      <p class="desc" id="desc-hist"></p>
+    </section>
+
+    <section class="chart-container">
+      <h2>Scatter Plot: Total Pengguna vs Pertumbuhan (%)</h2>
+      <canvas id="scatterChart"></canvas>
+      <p class="desc" id="desc-scatter"></p>
+    </section>
+
+    <section class="chart-container">
+      <h2>Peta Choropleth (Asia)</h2>
+      <div id="asia_map" style="width:100%;height:480px;"></div>
+      <p class="desc" id="desc-map"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Harry Zulkifli – Fakultas Teknologi Informasi, Universitas Sebelas April (UNSAP)</p>
+  </footer>
+
+  <script src="dataset.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
